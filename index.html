@@ -174,7 +174,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Home
+            Startseite
           </a>
         </li>
       
@@ -184,7 +184,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archives
+            Archiv
           </a>
         </li>
       
@@ -237,6 +237,114 @@
             
               
                 
+                <a class="post-title-link" href="/2016/09/28/Terminal（终端）代理/" itemprop="url">
+                  Unbenannt
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-09-28T11:52:52+08:00" content="2016-09-28">
+              2016-09-28
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>#Terminal（终端）代理</p>
+<p>###临时代理</p>
+<blockquote>
+<p>临时走代理的话，只需要在终端输入<br>export http_proxy=“xxxx://127.0.0.1:port”<br>export https_proxy=“xxxx://127.0.0.1:port”<br><strong>xxxx</strong>、<strong>port</strong> 取决于你使用的代理工具，可通过“系统偏好设置-网络-高级-代理”查看到。使用的是 ShadowsocksX 的话，输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">export http_proxy=&quot;socks5://127.0.0.1:1080&quot;</div><div class="line">export https_proxy=&quot;socks5://127.0.0.1:1080&quot;</div></pre></td></tr></table></figure></p>
+<p>如果使用的是 Surge for Mac 的话，设置中先切换成全局代理，然后输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">export http_proxy=&quot;http://127.0.0.1:6251&quot;</div><div class="line">export https_proxy=&quot;http://127.0.0.1:6251&quot;</div></pre></td></tr></table></figure></p>
+<p>取消代理都只需要输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">unset http_proxy</div><div class="line">unset https_proxy</div></pre></td></tr></table></figure></p>
+</blockquote>
+<p>###长期</p>
+<blockquote>
+<p>可以把以上命令写入 shell 配置中，zsh 写入  ~/.zshrc，bash 写入 ~/.bash_profile<br>以 bash 为例， ~/.bash_profile 中写入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">function proxy () &#123;</div><div class="line">   export http_proxy=“socks5://127.0.0.1:1080”</div><div class="line">   export https_proxy=“socks5://127.0.0.1:1080”</div><div class="line">&#125;</div><div class="line">function noproxy () &#123;</div><div class="line">   unset http_proxy </div><div class="line">   unset https_proxy=</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>然后需要代理的时候输入 proxy，noproxy 关闭代理。</p>
+<p>zsh 类似，~/.zshrc 写入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">proxy () &#123;</div><div class="line">  export http_proxy=“socks5://127.0.0.1:1080”</div><div class="line">  export https_proxy=“socks5://127.0.0.1:1080”</div><div class="line">&#125;</div><div class="line">noproxy () &#123;</div><div class="line">   unset http_proxy </div><div class="line">   unset https_proxy</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>最后可以通过以下命令测试下。</p>
+<pre><code>curl -i http://ip.cn
+</code></pre></blockquote>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/09/25/hello-world/" itemprop="url">
                   Hello World
                 </a>
@@ -250,7 +358,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Posted on</span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
             <time itemprop="dateCreated" datetime="2016-09-25T22:50:01+08:00" content="2016-09-25">
               2016-09-25
             </time>
@@ -359,8 +467,8 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">1</span>
-              <span class="site-state-item-name">posts</span>
+              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-name">Artikel</span>
             </a>
           </div>
 
@@ -414,7 +522,7 @@
 </div>
 
 <div class="powered-by">
-  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
