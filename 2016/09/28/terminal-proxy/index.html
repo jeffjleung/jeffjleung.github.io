@@ -68,12 +68,10 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Terminal 代理," />
 
 
 
-
-  
 
 
   <link rel="alternate" href="/atom.xml" title="Jeff's Blog" type="application/atom+xml" />
@@ -88,25 +86,13 @@
 
 
 
-<meta name="description" content="#Terminal（终端）代理
-###临时代理
-
-临时走代理的话，只需要在终端输入export http_proxy=“xxxx://127.0.0.1:port”export https_proxy=“xxxx://127.0.0.1:port”xxxx、port 取决于你使用的代理工具，可通过“系统偏好设置-网络-高级-代理”查看到。使用的是 ShadowsocksX 的话，输入12expor">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Jeff's Blog">
-<meta property="og:url" content="http://yoursite.com/2016/09/28/Terminal（终端）代理/index.html">
+<meta property="og:title" content="Terminal（终端）代理">
+<meta property="og:url" content="jeffjleung.com/2016/09/28/terminal-proxy/index.html">
 <meta property="og:site_name" content="Jeff's Blog">
-<meta property="og:description" content="#Terminal（终端）代理
-###临时代理
-
-临时走代理的话，只需要在终端输入export http_proxy=“xxxx://127.0.0.1:port”export https_proxy=“xxxx://127.0.0.1:port”xxxx、port 取决于你使用的代理工具，可通过“系统偏好设置-网络-高级-代理”查看到。使用的是 ShadowsocksX 的话，输入12expor">
-<meta property="og:updated_time" content="2016-09-28T04:19:39.000Z">
+<meta property="og:updated_time" content="2016-09-28T08:59:11.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jeff's Blog">
-<meta name="twitter:description" content="#Terminal（终端）代理
-###临时代理
-
-临时走代理的话，只需要在终端输入export http_proxy=“xxxx://127.0.0.1:port”export https_proxy=“xxxx://127.0.0.1:port”xxxx、port 取决于你使用的代理工具，可通过“系统偏好设置-网络-高级-代理”查看到。使用的是 ShadowsocksX 的话，输入12expor">
+<meta name="twitter:title" content="Terminal（终端）代理">
 
 
 
@@ -127,9 +113,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/09/28/Terminal（终端）代理/"/>
+  <link rel="canonical" href="jeffjleung.com/2016/09/28/terminal-proxy/"/>
 
-  <title>  | Jeff's Blog </title>
+  <title> Terminal（终端）代理 | Jeff's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
@@ -249,7 +235,7 @@
             
             
               
-                
+                Terminal（终端）代理
               
             
           </h1>
@@ -261,7 +247,7 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">Veröffentlicht am</span>
-            <time itemprop="dateCreated" datetime="2016-09-28T11:52:52+08:00" content="2016-09-28">
+            <time itemprop="dateCreated" datetime="2016-09-28T14:39:41+08:00" content="2016-09-28">
               2016-09-28
             </time>
           </span>
@@ -289,22 +275,7 @@
       
 
       
-        <p>#Terminal（终端）代理</p>
-<p>###临时代理</p>
-<blockquote>
-<p>临时走代理的话，只需要在终端输入<br>export http_proxy=“xxxx://127.0.0.1:port”<br>export https_proxy=“xxxx://127.0.0.1:port”<br><strong>xxxx</strong>、<strong>port</strong> 取决于你使用的代理工具，可通过“系统偏好设置-网络-高级-代理”查看到。使用的是 ShadowsocksX 的话，输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">export http_proxy=&quot;socks5://127.0.0.1:1080&quot;</div><div class="line">export https_proxy=&quot;socks5://127.0.0.1:1080&quot;</div></pre></td></tr></table></figure></p>
-<p>如果使用的是 Surge for Mac 的话，设置中先切换成全局代理，然后输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">export http_proxy=&quot;http://127.0.0.1:6251&quot;</div><div class="line">export https_proxy=&quot;http://127.0.0.1:6251&quot;</div></pre></td></tr></table></figure></p>
-<p>取消代理都只需要输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">unset http_proxy</div><div class="line">unset https_proxy</div></pre></td></tr></table></figure></p>
-</blockquote>
-<p>###长期</p>
-<blockquote>
-<p>可以把以上命令写入 shell 配置中，zsh 写入  ~/.zshrc，bash 写入 ~/.bash_profile<br>以 bash 为例， ~/.bash_profile 中写入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">function proxy () &#123;</div><div class="line">   export http_proxy=“socks5://127.0.0.1:1080”</div><div class="line">   export https_proxy=“socks5://127.0.0.1:1080”</div><div class="line">&#125;</div><div class="line">function noproxy () &#123;</div><div class="line">   unset http_proxy </div><div class="line">   unset https_proxy=</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>然后需要代理的时候输入 proxy，noproxy 关闭代理。</p>
-<p>zsh 类似，~/.zshrc 写入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">proxy () &#123;</div><div class="line">  export http_proxy=“socks5://127.0.0.1:1080”</div><div class="line">  export https_proxy=“socks5://127.0.0.1:1080”</div><div class="line">&#125;</div><div class="line">noproxy () &#123;</div><div class="line">   unset http_proxy </div><div class="line">   unset https_proxy</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>最后可以通过以下命令测试下。</p>
-<pre><code>curl -i http://ip.cn
-</code></pre></blockquote>
-
+        
       
     </div>
 
@@ -323,6 +294,12 @@
     </div>
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Terminal-代理/" rel="tag">#Terminal 代理</a>
+          
+        </div>
       
 
       
@@ -410,6 +387,13 @@
 
           
 
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">Tags</span>
+              </a>
+            </div>
           
 
         </nav>
