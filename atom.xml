@@ -4,9 +4,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="jeffjleung.com/"/>
-  <updated>2016-09-28T08:59:11.000Z</updated>
-  <id>jeffjleung.com/</id>
+  <link href="http://jeffjleung.com/"/>
+  <updated>2016-09-28T10:00:12.000Z</updated>
+  <id>http://jeffjleung.com/</id>
   
   <author>
     <name>Jeff Leung</name>
@@ -17,24 +17,24 @@
   
   <entry>
     <title>Terminal（终端）代理</title>
-    <link href="jeffjleung.com/2016/09/28/terminal-proxy/"/>
-    <id>jeffjleung.com/2016/09/28/terminal-proxy/</id>
+    <link href="http://jeffjleung.com/2016/09/28/terminal-proxy/"/>
+    <id>http://jeffjleung.com/2016/09/28/terminal-proxy/</id>
     <published>2016-09-28T06:39:41.000Z</published>
-    <updated>2016-09-28T08:59:11.000Z</updated>
+    <updated>2016-09-28T10:00:12.000Z</updated>
     
     <summary type="html">
     
     </summary>
     
     
-      <category term="Terminal 代理" scheme="jeffjleung.com/tags/Terminal-%E4%BB%A3%E7%90%86/"/>
+      <category term="Terminal 代理" scheme="http://jeffjleung.com/tags/Terminal-%E4%BB%A3%E7%90%86/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="jeffjleung.com/2016/09/25/hello-world/"/>
-    <id>jeffjleung.com/2016/09/25/hello-world/</id>
+    <link href="http://jeffjleung.com/2016/09/25/hello-world/"/>
+    <id>http://jeffjleung.com/2016/09/25/hello-world/</id>
     <published>2016-09-25T14:50:01.000Z</published>
     <updated>2016-09-26T14:27:13.000Z</updated>
     
